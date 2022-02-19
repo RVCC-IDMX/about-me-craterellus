@@ -1,0 +1,33 @@
+body {
+    font-family:Raleway;
+    background-color: #9EA0BC;
+    color: #FFEDDC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Fredericka the Great";
+    color: #3B1310;
+}
+
+h1 {
+    font-size:40px;
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    text-align:center;
+    color: #FF9772;
+    background-color: #694C70;
+    border: 5px solid #3B1310;
+}
+
+#hero img{
+    width:300px;
+}
+
+#bio {
+    text-align:center;
+}
