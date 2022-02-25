@@ -3,7 +3,7 @@ body {
     font-size: 17px;
     background-image: url(../img/foodpattern.jpg);
     background-color: #9b9fdd;
-    color: #265575;
+    color: #09466B;
 }
 
 section {
@@ -12,7 +12,7 @@ section {
 
 header img {
     background-color: #F0D3CE;
-    border: 5px dotted #265575;
+    border: 5px dotted #09466B;
     padding: 5px 5px;
 }
 
@@ -28,7 +28,7 @@ h1 {
 h2 {
     font-family:"Fredericka the Great";
     font-size: 30px;
-    color:#265575;
+    color:#09466B;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-style: dotted;
@@ -65,4 +65,23 @@ header {
     border-top-right-radius:30px;
     width: 400px;
     padding: 0 15px 0 15px;
+}
+
+#hobbies ul li:nth-child(even) {
+    font-style: italic;
+}
+#hobbies ul li:nth-child(odd) {
+    font-weight:bold
+}
+
+#hobbies ul li:nth-child(3n) {
+    color:#A72F8E;
+}
+
+#hobbies ul li:nth-child(3n +1) {
+    color:#AF6CD9;
+}
+
+#hobbies ul li:nth-child(3n + 2) {
+    color: #6156C7;
 }
