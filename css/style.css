@@ -1,33 +1,68 @@
 body {
     font-family:Raleway;
-    background-color: #9EA0BC;
-    color: #FFEDDC;
+    font-size: 17px;
+    background-image: url(../img/foodpattern.jpg);
+    background-color: #9b9fdd;
+    color: #265575;
 }
 
-h1, h2, h3, h4, h5, h6 {
+section {
+    margin: 10px auto;
+}
+
+header img {
+    background-color: #F0D3CE;
+    border: 5px dotted #265575;
+    padding: 5px 5px;
+}
+
+h1, h3, h4, h5, h6 {
     font-family:"Fredericka the Great";
-    color: #3B1310;
+    color: #351111;
 }
 
 h1 {
-    font-size:40px;
+    font-size: 50px;
 }
+
+h2 {
+    font-family:"Fredericka the Great";
+    font-size: 30px;
+    color:#265575;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dotted;
+}
+
 
 header {
     text-align:center;
 }
 
-#hero, footer {
+#hero, footer, h1 {
     text-align:center;
-    color: #FF9772;
-    background-color: #694C70;
-    border: 5px solid #3B1310;
+    color: #351111;
+    background-color: #F0D3CE;
+    border: 5px solid #351111;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 5px 5px;
 }
 
-#hero img{
+#hero img {
     width:300px;
 }
 
-#bio {
+#bio, #hobbies {
     text-align:center;
+    background-color: #F0D3CE;
+    border: 5px solid #351111;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    width: 400px;
+    padding: 0 15px 0 15px;
 }
