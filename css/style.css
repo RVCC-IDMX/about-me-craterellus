@@ -27,6 +27,7 @@ h1, h3, h4, h5, h6 {
 
 h1 {
     font-size: 50px;
+    text-shadow: 0 0 3px #1ea8f8;
 }
 
 h2 {
@@ -34,10 +35,29 @@ h2 {
     font-size: 30px;
     color:#09466B;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-style: double;
 }
 
+ /* unvisited link */
+ a:link {
+    color: #B80071
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #6C20D6;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FF7556;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #00AFF5;
+  } 
 
 header {
     text-align:center;
@@ -82,7 +102,6 @@ header {
 
 /* Hobbies Section */
 
-
 #hobbies ul li:nth-child(even) {
     font-style: italic;
 }
@@ -116,8 +135,37 @@ header {
     width: 700px;
     margin: 20px auto;
     padding: 5px 5px;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
     max-width:100%;
+}
+
+/* Literature */
+
+#lit {
+    background-color: #F0D3CE;
+    border: 5px solid #351111;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+    width: 620px;
+    margin: 20px auto;
+    padding: 50px 50px;
+    margin-bottom: 4rem;
+}
+
+/* Dropcaps */
+
+#lit div p:first-letter {
+    color:#A72F8E;
+    float:left;
+    font-family:"Fredericka the Great";
+    margin: 0.1em 0.2em 0.1em 0.1em;
+    font-size: 2rem;
+    border: 3px double;
+    padding: 5px 5px;
+    box-shadow: 4px 4px #09466B;
 }
