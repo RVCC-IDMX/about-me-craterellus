@@ -22,6 +22,7 @@ section h2 {
     text-align: center;
 }
 
+
 header img {
     background-color: #F0D3CE;
     border: 5px dotted #09466B;
@@ -35,7 +36,6 @@ h1, h3, h4, h5, h6 {
 
 h1 {
     font-size: 50px;
-    text-shadow: 0 0 3px #1ea8f8;
 }
 
 h2 {
@@ -47,6 +47,8 @@ h2 {
     text-decoration-style: double;
     margin: .1em;
 }
+
+
 
  /* unvisited link */
  a:link {
@@ -72,9 +74,15 @@ header {
     text-align:center;
 }
 
+footer, h1 {
+    max-width: 700px;
+}
 
 /*Hero Section*/
 
+#hero {
+    max-width: 500px;
+}
 
 #hero, footer, h1 {
     text-align:center;
@@ -104,6 +112,7 @@ header {
     border-bottom-left-radius:30px;
     border-top-right-radius:30px;
     padding: 0 15px 0 15px;
+    max-width: 400px;
 }
 
 
@@ -123,15 +132,15 @@ header {
 }
 
 #hobbies ul li:nth-child(3n) {
-    color:#A72F8E;
+    color:#962A81;
 }
 
 #hobbies ul li:nth-child(3n +1) {
-    color:#AF6CD9;
+    color:#083A96;
 }
 
 #hobbies ul li:nth-child(3n + 2) {
-    color: #6156C7;
+    color: #574DB3;
 }
 
 
@@ -174,10 +183,10 @@ header {
     color:#A72F8E;
     float:left;
     font-family:"Fredericka the Great";
-    margin: 0.1em 0.2em 0.1em 0.3em;
-    font-size: 2rem;
+    margin: 0.2em 0.3em 0.2em 0.2em;
+    font-size: 1.5rem;
     border: 3px double;
-    padding: 5px 5px;
+    padding: 1px 3px;
     box-shadow: 4px 4px #09466B;
 }
 
@@ -198,6 +207,7 @@ figcaption {
     margin-left: 1rem;
 }
 
+
 figure img {
     width: 100%;
 }
@@ -215,6 +225,7 @@ figure img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 
     hr {
         display: none;
