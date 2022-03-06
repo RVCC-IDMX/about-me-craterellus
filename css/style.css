@@ -42,8 +42,6 @@ h2 {
     font-family:"Fredericka the Great";
     font-size: 30px;
     color:#09466B;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
     text-decoration-style: double;
     margin: .1em;
 }
@@ -206,6 +204,7 @@ figcaption {
     font-size: 1.5rem;
     margin-left: 1rem;
 }
+
 
 
 figure img {
