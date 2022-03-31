@@ -143,7 +143,7 @@ footer, h1 {
 
 /* Video Section */
 
-#video {
+#video, #contact {
     background-color: #F0D3CE;
     border: 5px solid #351111;
     border-bottom-left-radius:30px;
@@ -279,4 +279,11 @@ figure img {
     figure {
         display: block;
     }
+}
+
+
+/* Contact Form */
+
+#formelements {
+    display:grid;
 }
