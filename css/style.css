@@ -2,7 +2,7 @@ body {
     font-family:Raleway;
     font-size: 17px;
     background-image: url(../img/foodpattern.jpg);
-    background-color: #9b9fdd;
+    background-color: #9ca0de;
     color: #09466B;
 }
 
@@ -130,7 +130,7 @@ footer, h1 {
 }
 
 #hobbies ul li:nth-child(3n) {
-    color:#962A81;
+    color:#962a81;
 }
 
 #hobbies ul li:nth-child(3n +1) {
@@ -228,6 +228,77 @@ footer, h1 {
     box-shadow: 4px 4px #09466B;
 }
 
+
+
+/* Contact Form */
+
+#formelements {
+    display:grid;
+    row-gap:.5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px dotted;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius: 2rem;
+}
+
+legend {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #962a81;
+}
+
+#contact input, #contact textarea, #contact button {
+    padding:.5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style:none;
+    padding:0px;
+}
+
+#contact li {
+    margin:1rem;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+    font-family:Raleway;
+    font-size: 17px;
+}
+
+#contact button {
+    background-color:#62669e;
+    color: white;
+    border: 3px solid white;
+    max-width: 400px;
+    width: 60%;
+    justify-self: center;
+    border-radius: 2rem;
+}
+
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 4px rbga(255, 0, 0, 0.5);
+    border: 3px solid red;
+}
+
+
+
+
+
 /* tablet size */
 
 @media screen and (min-width: 60em){
@@ -281,9 +352,3 @@ figure img {
     }
 }
 
-
-/* Contact Form */
-
-#formelements {
-    display:grid;
-}
