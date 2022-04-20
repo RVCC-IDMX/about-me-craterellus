@@ -6,6 +6,10 @@ body {
     color: #09466B;
 }
 
+main {
+    margin: auto;
+}
+
 /*
 
 * {
@@ -23,9 +27,9 @@ section h2 {
 }
 
 
-header img {
+/* header img {
     padding: 5px 5px;
-}
+} */
 
 h1, h3, h4, h5, h6 {
     font-family:"Fredericka the Great";
@@ -71,15 +75,12 @@ header {
     text-align:center;
 }
 
-footer, h1 {
+/* footer, h1 {
     max-width: 700px;
-}
+} */
 
 /*Hero Section*/
 
-#hero {
-    max-width: 500px;
-}
 
 #hero, footer {
     text-align:center;
@@ -90,8 +91,8 @@ footer, h1 {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    margin: 20px auto;
-    padding: 5px 5px;
+    /* margin: 20px auto;
+    padding: 5px 5px; */
 }
 
 
@@ -108,18 +109,22 @@ footer, h1 {
     border: 5px solid #351111;
     border-bottom-left-radius:30px;
     border-top-right-radius:30px;
-    padding: 0 15px 0 15px;
-    max-width: 400px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:30px;
+    /* padding: 0 15px 0 15px; */
+    /* max-width: 400px; */
 }
 
 
 /* Hobbies Section */
 
-#hobbies {
+/* #hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
+
+/* Hobbies List */
 
 #hobbies ul li:nth-child(even) {
     font-style: italic;
@@ -149,16 +154,16 @@ footer, h1 {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    margin: 20px auto;
+    /* margin: 20px auto;
     padding: 10px 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
 
 }
 
-.wrapper {
+/* .wrapper {
     margin: 0 auto;
     width: 100%;
-}
+} */
 
 .videowrapper {
     position: relative;
@@ -184,19 +189,19 @@ footer, h1 {
 /* Gallery Section */
 
 
-#gallery {
+#gallery, #artwork {
     background-color: #F0D3CE;
     border: 5px solid #351111;
     border-bottom-left-radius:30px;
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    margin: 20px auto;
+    /* margin: 20px auto;
     padding: 5px 5px;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
 }
 
-#gallery img {
+#gallery img, #artwork img {
     max-width:100%;
 }
 
@@ -209,10 +214,13 @@ footer, h1 {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    margin: 20px auto;
+    /* margin: 20px auto;
     padding: 50px 50px;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; */
 }
+
+
+
 
 /* Dropcaps */
 
@@ -229,6 +237,8 @@ footer, h1 {
 
 
 
+
+
 /* Contact Form */
 
 #formelements {
@@ -236,11 +246,11 @@ footer, h1 {
     row-gap:.5em;
 }
 
-#contact {
+/* #contact {
     padding: 1rem;
     max-width: 600px;
     margin: 2rem auto;
-}
+} */
 
 fieldset {
     border: 2px dotted;
@@ -302,43 +312,126 @@ input. {
 
 
 
-/* tablet size */
+/*************************** tablet size ****************************************/
 
-@media screen and (min-width: 60em){
+@media screen and (min-width: 50em){
+
+
+    main {
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr 50px;
+        justify-content: center;
+        }
+
+    #hero, #artwork, #gallery, #video, #contact, #article {
+        grid-column: 2 / 4;
+        width: 100%;
+    }
+
+    #hero img {
+        width:400px;
+    }
+
+    #bio, #hobbies {
+        height: 400px;
+        width: 100%;
+        grid-row-start: 2;
+        grid-column-gap: 10px;
+        grid-row-gap: 0em;
+
+    }
+
+    #bio {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+
+    #hobbies {
+        grid-column: 3/4;
+        border-bottom-left-radius:0px;
+        border-top-left-radius:0px;
+        border-left: none;
+    }
+
+
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-}
 
-figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
 
-#video {
-    max-width: 600px;
-}
+    figcaption {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+          font-size: 1.5rem;
+    }
+    
+    figure img {
+         width: 100%;
+    }
 
-figure img {
-    width: 100%;
-}
-
-#lit div {
+    #lit div {
     max-width: 100%;
     columns: 20rem;
+    }
 }
 
-/* large screen size */
 
-@media screen and (min-width: 900px) {
+/************************ large screen size ************************/
 
-    #gallery {
+@media screen and (min-width: 1200px) {
+
+    main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 75px 1fr 1fr 1fr 75px;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    #hero, #contact {
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        width: 100%;
+    
+    }
+
+    #hobbies {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+    }
+
+    #artwork {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+    #bio, #video {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+    #video, #gallery {
+        height: 100%;
+    }
+    
+    #gallery {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 2;
+    }
+    
+    #article {
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        width: 100%;
     }
 
 
