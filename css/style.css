@@ -37,8 +37,8 @@ h1, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 50px;
     color: whitesmoke;
+    padding-left: 15px;
 }
 
 h2 {
@@ -134,15 +134,15 @@ header {
 }
 
 #hobbies ul li:nth-child(3n) {
-    color:#962a81;
+    color:#751D64;
 }
 
 #hobbies ul li:nth-child(3n +1) {
-    color:#083A96;
+    color:#084a64;
 }
 
 #hobbies ul li:nth-child(3n + 2) {
-    color: #574DB3;
+    color: #5349AB;
 }
 
 /* Video Section */
@@ -263,7 +263,7 @@ legend {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     font-style: italic;
-    color: #962a81;
+    color: #751D64;
 }
 
 #contact input, #contact textarea, #contact button {
@@ -301,7 +301,7 @@ textarea {
 
 input:focus, textarea:focus {
     box-shadow: 0 0 4px rbga(255, 0, 0, 0.5);
-    border: 3px solid red;
+    border: 3px solid #9ca0de;
 }
 
 input. {
