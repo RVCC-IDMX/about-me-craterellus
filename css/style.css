@@ -6,6 +6,10 @@ body {
     color: #09466B;
 }
 
+p {
+    padding: 7px;
+}
+
 main {
     margin: auto;
 }
@@ -27,10 +31,6 @@ section h2 {
 }
 
 
-/* header img {
-    padding: 5px 5px;
-} */
-
 h1, h3, h4, h5, h6 {
     font-family:"Fredericka the Great";
     color: #351111;
@@ -47,6 +47,7 @@ h2 {
     color:#09466B;
     text-decoration-style: double;
     margin: .1em;
+    padding: 5px;
 }
 
 
@@ -75,12 +76,13 @@ header {
     text-align:center;
 }
 
-/* footer, h1 {
-    max-width: 700px;
-} */
 
 /*Hero Section*/
 
+#hero {
+    font-size: 1.4em;
+    padding: 10px;
+}
 
 #hero, footer {
     text-align:center;
@@ -91,13 +93,12 @@ header {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    /* margin: 20px auto;
-    padding: 5px 5px; */
 }
 
 
 #hero img {
     width:300px;
+    padding-bottom: 5px;
 }
 
 /*Bio Section*/
@@ -111,6 +112,7 @@ header {
     border-top-right-radius:30px;
     border-bottom-right-radius:30px;
     border-top-left-radius:30px;
+    padding: 15px;
     /* padding: 0 15px 0 15px; */
     /* max-width: 400px; */
 }
@@ -118,13 +120,16 @@ header {
 
 /* Hobbies Section */
 
-/* #hobbies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+#hobbies img {
+    padding: 10px;
+    max-width: 100%;
+}
 
 /* Hobbies List */
+
+#hobbies ul li:first-child {
+    padding-top: 10px;
+}
 
 #hobbies ul li:nth-child(even) {
     font-style: italic;
@@ -145,6 +150,10 @@ header {
     color: #5349AB;
 }
 
+#hobbies ul li:last-child {
+    padding-bottom: 20px;
+}
+
 /* Video Section */
 
 #video, #contact {
@@ -154,9 +163,8 @@ header {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    /* margin: 20px auto;
+    /*margin: 20px auto;*/
     padding: 10px 10px;
-    margin-bottom: 2rem; */
 
 }
 
@@ -186,7 +194,7 @@ header {
     font-size: 1.2rem;
 }
 
-/* Gallery Section */
+/* Gallery and Artwork Section */
 
 
 #gallery, #artwork {
@@ -196,16 +204,18 @@ header {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    /* margin: 20px auto;
-    padding: 5px 5px;
-    margin-bottom: 2rem; */
+    padding: 15px;
 }
 
 #gallery img, #artwork img {
     max-width:100%;
+    padding-top:20px;
 }
 
-/* Literature */
+
+
+
+/***** Aricle *****/
 
 #lit {
     background-color: #F0D3CE;
@@ -214,25 +224,15 @@ header {
     border-top-right-radius:30px;
     border-top-left-radius:30px;
     border-bottom-right-radius:30px;
-    /* margin: 20px auto;
-    padding: 50px 50px;
-    margin-bottom: 4rem; */
+    padding: 20px;
 }
-
-
-
 
 /* Dropcaps */
 
 #lit div p:first-child::first-letter {
-    color:#A72F8E;
     float:left;
     font-family:"Fredericka the Great";
-    margin: 0.2em 0.3em 0.2em 0.2em;
-    font-size: 1.5rem;
-    border: 3px double;
-    padding: 1px 3px;
-    box-shadow: 4px 4px #09466B;
+    font-size: 1.6rem;
 }
 
 
@@ -246,17 +246,18 @@ header {
     row-gap:.5em;
 }
 
-/* #contact {
+#contact {
     padding: 1rem;
-    max-width: 600px;
-    margin: 2rem auto;
-} */
+}
 
 fieldset {
-    border: 2px dotted;
+    border: 5px double;
     margin-top:1em;
     margin-bottom:1em;
     border-radius: 2rem;
+    padding: 30px;
+    max-width: 660px;
+    margin: auto;
 }
 
 legend {
@@ -273,7 +274,6 @@ legend {
 
 #contact ul {
     list-style:none;
-    padding:0px;
 }
 
 #contact li {
@@ -298,6 +298,10 @@ textarea {
     border-radius: 2rem;
 }
 
+label {
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
 input:focus, textarea:focus {
     box-shadow: 0 0 4px rbga(255, 0, 0, 0.5);
@@ -319,12 +323,12 @@ input. {
 
     main {
         display: grid;
-        grid-template-columns: 50px 1fr 1fr 50px;
+        grid-template-columns: 50px 1fr 1fr 1fr 50px;
         justify-content: center;
         }
 
     #hero, #artwork, #gallery, #video, #contact, #article {
-        grid-column: 2 / 4;
+        grid-column: 2 / 5;
         width: 100%;
     }
 
@@ -333,7 +337,7 @@ input. {
     }
 
     #bio, #hobbies {
-        height: 400px;
+        height: 100%;
         width: 100%;
         grid-row-start: 2;
         grid-column-gap: 10px;
@@ -343,20 +347,39 @@ input. {
 
     #bio {
         grid-column-start: 2;
-        grid-column-end: span 1;
+        grid-column-end: span 2;
         border-top-right-radius:0px;
         border-bottom-right-radius:0px;
+        border-right: none;
     }
 
     #hobbies {
-        grid-column: 3/4;
+        grid-column: 4/5;
         border-bottom-left-radius:0px;
         border-top-left-radius:0px;
         border-left: none;
     }
 
+    #artwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 
-    figure {
+    #artwork img{
+        grid-column: span 1;
+    }
+
+    #artwork hr, #gallery hr{
+        display: none;
+    }
+    
+    #artwork h2 {
+        grid-column: span 2;
+    }
+
+
+    #gallery figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
@@ -366,7 +389,8 @@ input. {
          display: flex;
          justify-content: center;
          align-items: center;
-          font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding: 15px;
     }
     
     figure img {
