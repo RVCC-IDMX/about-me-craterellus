@@ -237,182 +237,220 @@
     <h2>Animating SVG Images</h2>
 
     <div>
+        <p>SVG animations are used everywhere in websites these days. It's surprisingly easy to animate an SVG. You don't need to be Walt Disney to make these images come to life.</p>
 
-        <p>My dear Harry, my dear Basil, you must both congratulate me!" said the lad, throwing off his evening cape with its satin-lined wings and shaking each of his friends by the hand in turn. "I have never been so happy. Of course, it is sudden--all really delightful things are. And yet it seems to me to be the one thing I have been looking for all my life." He was flushed with excitement and pleasure, and looked extraordinarily handsome.</p>
+        <h3>First off, what is an SVG?</h3>
+        <p>SVG stands for Scalable Vector Graphic. If you don’t know what a vector is, don’t sweat it. Vector images are made up of mathematical equations. They’re basically a list of directions given to a computer and so they can be reproduced at any size. If that still doesn’t make sense, consider the differences between a vector image and a bitmap image, like for instance, a jpeg. If you zoom into a jpeg past 100%, the image will begin to blur. If you keep zooming, you’ll start to see individual pixels. When you zoom in on an SVG image, it never loses its sharpness because your computer knows how to calculate its appearance at any size.</p>
+        <p>Vector graphics are used everywhere these days. You can find them on websites. They’re very often used as buttons and interactive elements, and any logo you see nowadays is made from vector art.</p>
+        <p>The coolest thing about SVG images is that you can plug them into the HTML on your website and animate their individual parts.</p>
 
-        <p>I hope you will always be very happy, Dorian," said Hallward, "but I don't quite forgive you for not having let me know of your engagement. You let Harry know."</p>
+        <h3>Can I make an SVG?</h3>
+        <p>Yes, you can! There are tons of options to explore if you’re the creative type and want to delve into the world of vector art. For a long time, Adobe Illustrator was basically the most available option but today there are tools like Figma, that are easy to learn and best of all, free to use. </p>
 
-        <p>And I don't forgive you for being late for dinner," broke in Lord Henry, putting his hand on the lad's shoulder and smiling as he spoke. "Come, let us sit down and try what the new chef here is like, and then you will tell us how it all came about."</p>
+        <h3>Where can I find an SVG?</h3>
+        <p>You can also find SVGs to use for free online. I like to use <a href="https://freesvg.org/">freesvg.org</a>, but there are many others. Don’t forget to give credit, though!</p>
 
-        <p>There is really not much to tell," cried Dorian as they took their seats at the small round table. "What happened was simply this. After I left you yesterday evening, Harry, I dressed, had some dinner at that little Italian restaurant in Rupert Street you introduced me to, and went down at eight o'clock to the theatre. Sibyl was playing Rosalind. Of course, the scenery was dreadful and the Orlando absurd. But Sibyl! You should have seen her! When she came on in her boy's clothes, she was perfectly wonderful. She wore a moss-coloured velvet jerkin with cinnamon sleeves, slim, brown, cross-gartered hose, a dainty little green cap with a hawk's feather caught in a jewel, and a hooded cloak lined with dull red. She had never seemed to me more exquisite. She had all the delicate grace of that Tanagra figurine that you have in your studio, Basil. Her hair clustered round her face like dark leaves round a pale rose. As for her acting--well, you shall see her to-night. She is simply a born artist.
-        <p>I sat in the dingy box absolutely enthralled. I forgot that I was in London and in the nineteenth century. I was away with my love in a forest that no man had ever seen. After the performance was over, I went behind and spoke to her. As we were sitting together, suddenly there came into her eyes a look that I had never seen there before. My lips moved towards hers. We kissed each other. I can't describe to you what I felt at that moment. It seemed to me that all my life had been narrowed to one perfect point of rose-coloured joy. She trembled all over and shook like a white narcissus. Then she flung herself on her knees and kissed my hands. I feel that I should not tell you all this, but I can't help it. Of course, our engagement is a dead secret.</p>
-        <p>She has not even told her own mother. I don't know what my guardians will say. Lord Radley is sure to be furious. I don't care. I shall be of age in less than a year, and then I can do what I like. I have been right, Basil, haven't I, to take my love out of poetry and to find my wife in Shakespeare's plays? Lips that Shakespeare taught to speak have whispered their secret in my ear. I have had the arms of Rosalind around me, and kissed Juliet on the mouth."</p>
+        <h3>Okay, but I still don’t know how to animate it.</h3>
+        <p>We’re getting to that part, don’t worry. Alright, so you have your SVG. Before you start coding, it’s a good idea to open your SVG in a vector image editing application, like Illustrator* or Figma. Go into the layer section of the image editor and make sure that you’ve given names to the shapes that you want to animate. This will come in handy when you want to select them in CSS.</p>
+        <p>Important step! Before you export your image out of Figma, go into the export settings and make sure “Include ID Attribute” is checked—that way, the names you’ve given your vector shapes will be preserved.</p>
+        <p>*While doing the research for this article, I discovered that exporting an SVG in Illustrator makes it more difficult to work with it for coding purposes. Illustrator is a great tool for designing vector images. When you finish designing a vector image in Illustrator (if you choose to do so), I recommend exporting your image from Figma before attempting to animate it.</p>
 
-        </div>
+        <h3>Placing the SVG into your project</h3>
+        <p>First, make sure the SVG is in the image folder of your project. Open the SVG in your code editor of choice. You’ll see a big wall of text. Highlight the whole thing, then copy and paste it into the body tag in your index.html file. By this point, if you open your page in live preview, you should see your image.</p>
 
-            <svg width="264" height="280" viewBox="0 0 264 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="264" height="280" fill="#E5E5E5"/>
-                <g id="avataaars(1) 1">
-                <g id="Avataaar">
-                <g id="Avataaar/Circle">
-                <g id="Group">
-                <g id="Circle">
-                <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="40" width="240" height="240">
-                <g id="react-mask-4">
-                <path id="Vector" d="M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask0_0_1)">
-                <path id="Circle-Background" d="M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z" fill="#E6E6E6"/>
-                <g id="Color/Palette/Blue-01">
-                <path id="&#240;&#159;&#150;&#141;Color" d="M252 40H12V280H252V40Z" fill="#65C9FF"/>
-                </g>
-                </g>
-                </g>
-                <mask id="mask1_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
-                <g id="react-mask-5">
-                <path id="Vector_2" d="M12 160C12 226.274 65.7258 280 132 280C198.274 280 252 226.274 252 160H264V0H0V160H12Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask1_0_1)">
-                <g id="Avataaar_2">
-                <g id="Body">
-                <mask id="mask2_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="36" width="200" height="244">
-                <g id="react-mask-6">
-                <path id="Vector_3" d="M156 180.611V199H160C199.764 199 232 231.236 232 271V280H32V271C32 231.236 64.2355 199 104 199H108V180.611C90.7626 172.422 78.3722 155.687 76.3051 135.881C70.4803 135.058 66 130.052 66 124V110C66 104.054 70.3246 99.1181 76 98.1659V92C76 61.0721 101.072 36 132 36C162.928 36 188 61.0721 188 92V98.1659C193.675 99.1181 198 104.054 198 110V124C198 130.052 193.52 135.058 187.695 135.881C185.628 155.687 173.237 172.422 156 180.611Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask2_0_1)">
-                <path id="Vector_4" d="M156 180.611V199H160C199.764 199 232 231.236 232 271V280H32V271C32 231.236 64.2355 199 104 199H108V180.611C90.7626 172.422 78.3722 155.687 76.3051 135.881C70.4803 135.058 66 130.052 66 124V110C66 104.054 70.3246 99.1181 76 98.1659V92C76 61.0721 101.072 36 132 36C162.928 36 188 61.0721 188 92V98.1659C193.675 99.1181 198 104.054 198 110V124C198 130.052 193.52 135.058 187.695 135.881C185.628 155.687 173.237 172.422 156 180.611Z" fill="#D0C6AC"/>
-                <g id="Skin/&#240;&#159;&#145;&#182;&#240;&#159;&#143;&#189;-03-Brown">
-                <g id="Color">
-                <path id="Vector_5" d="M296 36H32V316H296V36Z" fill="#EDB98A"/>
-                </g>
-                </g>
-                <path id="Neck-Shadow" fill-rule="evenodd" clip-rule="evenodd" d="M188 115V138C188 168.928 162.928 194 132 194C101.072 194 76 168.928 76 138V115V130C76 160.928 101.072 186 132 186C162.928 186 188 160.928 188 130V115Z" fill="black" fill-opacity="0.1"/>
-                </g>
-                </g>
-                <g id="Clothing/Shirt-V-Neck">
-                <mask id="mask3_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="199" width="200" height="81">
-                <g id="react-mask-56">
-                <path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M171.32 199.936C205.706 205.367 232 235.139 232 271.052V280H32V271.052C32 235.138 58.2944 205.366 92.6818 199.936C93.5836 205.005 96.1164 209.824 100.236 213.539L129.321 239.768C130.843 241.14 133.157 241.14 134.679 239.768L163.764 213.539C164.189 213.155 164.601 212.756 164.998 212.343C168.414 208.787 170.517 204.452 171.32 199.936Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask3_0_1)">
-                <path id="Clothes" fill-rule="evenodd" clip-rule="evenodd" d="M171.32 199.936C205.706 205.367 232 235.139 232 271.052V280H32V271.052C32 235.138 58.2944 205.366 92.6818 199.936C93.5836 205.005 96.1164 209.824 100.236 213.539L129.321 239.768C130.843 241.14 133.157 241.14 134.679 239.768L163.764 213.539C164.189 213.155 164.601 212.756 164.998 212.343C168.414 208.787 170.517 204.452 171.32 199.936Z" fill="#E6E6E6"/>
-                <g id="Color/Palette/Gray-01">
-                <path id="&#240;&#159;&#150;&#141;Color_2" d="M264 170H0V280H264V170Z" fill="#25557C"/>
-                </g>
-                </g>
-                </g>
-                <g id="Face">
-                <g id="Mouth/Smile">
-                <mask id="mask4_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="113" y="147" width="38" height="19">
-                <g id="react-mask-68">
-                <path id="Vector_7" fill-rule="evenodd" clip-rule="evenodd" d="M113.118 149.128C114.176 158.62 122.226 166 132 166C141.804 166 149.874 158.574 150.892 149.04C150.974 148.273 150.117 147 149.043 147C134.149 147 122.738 147 115.087 147C114.007 147 113.012 148.178 113.118 149.128Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask4_0_1)">
-                <path id="Mouth" fill-rule="evenodd" clip-rule="evenodd" d="M113.118 149.128C114.176 158.62 122.226 166 132 166C141.804 166 149.874 158.574 150.892 149.04C150.974 148.273 150.117 147 149.043 147C134.149 147 122.738 147 115.087 147C114.007 147 113.012 148.178 113.118 149.128Z" fill="black" fill-opacity="0.7"/>
-                <path id="Teeth" d="M143 136H122C119.239 136 117 138.239 117 141V147C117 149.761 119.239 152 122 152H143C145.761 152 148 149.761 148 147V141C148 138.239 145.761 136 143 136Z" fill="white"/>
-                <g id="Tongue">
-                <g id="Group_2">
-                <path id="Vector_8" d="M127 180C133.075 180 138 175.075 138 169C138 162.925 133.075 158 127 158C120.925 158 116 162.925 116 169C116 175.075 120.925 180 127 180Z" fill="#FF4F6D"/>
-                <path id="Vector_9" d="M137 180C143.075 180 148 175.075 148 169C148 162.925 143.075 158 137 158C130.925 158 126 162.925 126 169C126 175.075 130.925 180 137 180Z" fill="#FF4F6D"/>
-                </g>
-                </g>
-                </g>
-                </g>
-                <g id="Nose/Default">
-                <path id="Nose" fill-rule="evenodd" clip-rule="evenodd" d="M120 130C120 134.418 125.373 138 132 138C138.627 138 144 134.418 144 130" fill="black" fill-opacity="0.16"/>
-                </g>
-                <g id="Eyes/Side-&#240;&#159;&#152;&#146;">
-                <path id="Eye" fill-rule="evenodd" clip-rule="evenodd" d="M103.241 110.346C102.463 111.357 102 112.625 102 114C102 117.314 104.686 120 108 120C111.314 120 114 117.314 114 114C114 113.71 113.979 113.424 113.94 113.145C113.947 112.923 113.91 112.671 113.815 112.407C113.77 112.281 113.722 112.157 113.671 112.035C113.337 111.072 112.765 110.22 112.025 109.551C109.899 107.317 106.506 106 102.998 106C98.1644 106 94.0067 108.649 92.1602 112.447C91.6201 113.558 92.5468 114.3 93.4375 113.572C95.8738 111.579 99.2572 110.344 102.998 110.344C103.079 110.344 103.16 110.344 103.241 110.346Z" fill="black" fill-opacity="0.6"/>
-                <path id="Eye_2" fill-rule="evenodd" clip-rule="evenodd" d="M161.241 110.346C160.463 111.357 160 112.625 160 114C160 117.314 162.686 120 166 120C169.314 120 172 117.314 172 114C172 113.71 171.979 113.424 171.94 113.145C171.947 112.923 171.91 112.671 171.815 112.407C171.77 112.281 171.722 112.157 171.671 112.035C171.337 111.072 170.765 110.22 170.025 109.551C167.899 107.317 164.506 106 160.998 106C156.164 106 152.007 108.649 150.16 112.447C149.62 113.558 150.547 114.3 151.438 113.572C153.874 111.579 157.257 110.344 160.998 110.344C161.079 110.344 161.16 110.344 161.241 110.346Z" fill="black" fill-opacity="0.6"/>
-                </g>
-                <g id="Eyebrow/Outline/Default">
-                <g id="I-Browse">
-                <path id="left-eyebrow" d="M91.6302 99.1586C95.5452 93.6499 106.278 90.5608 115.523 92.8312C116.596 93.0946 117.679 92.4386 117.942 91.3659C118.206 90.2932 117.55 89.21 116.477 88.9466C105.74 86.31 93.3121 89.887 88.3698 96.8414C87.7299 97.7418 87.9411 98.9904 88.8414 99.6302C89.7418 100.27 90.9904 100.059 91.6302 99.1586Z" fill="black" fill-opacity="0.6"/>
-                <path id="right-eyebrow" d="M172.37 99.1586C168.455 93.6499 157.722 90.5608 148.477 92.8312C147.405 93.0946 146.321 92.4386 146.058 91.3659C145.795 90.2932 146.451 89.21 147.523 88.9466C158.26 86.31 170.688 89.887 175.631 96.8414C176.27 97.7418 176.059 98.9904 175.159 99.6302C174.259 100.27 173.01 100.059 172.37 99.1586Z" fill="black" fill-opacity="0.6"/>
-                </g>
-                </g>
-                </g>
-                <g id="Top">
-                <mask id="mask5_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
-                <g id="react-mask-42">
-                <path id="Vector_10" d="M264 0H0V280H264V0Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask5_0_1)">
-                <g id="Top/Long-Hair/Big-Hair">
-                <g id="Group_3">
-                <g id="Hair">
-                <mask id="mask6_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="13" width="234" height="267">
-                <g id="react-mask-43">
-                <path id="Vector_11" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM197.884 108.325C176.364 96.7374 157.89 80.1443 145.846 61.3024C127.764 86.9237 91.5299 91.5348 66.2241 107.68C66.0771 108.431 66 109.206 66 110V123C66 129.019 70.4309 134.002 76.2086 134.867C77.9518 155.115 90.4692 172.283 108 180.611V199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V180.611C173.531 172.283 186.048 155.115 187.791 134.867C193.569 134.002 198 129.019 198 123V110C198 109.432 197.96 108.872 197.884 108.325Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask6_0_1)">
-                <path id="Vector_12" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM197.884 108.325C176.364 96.7374 157.89 80.1443 145.846 61.3024C127.764 86.9237 91.5299 91.5348 66.2241 107.68C66.0771 108.431 66 109.206 66 110V123C66 129.019 70.4309 134.002 76.2086 134.867C77.9518 155.115 90.4692 172.283 108 180.611V199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V180.611C173.531 172.283 186.048 155.115 187.791 134.867C193.569 134.002 198 129.019 198 123V110C198 109.432 197.96 108.872 197.884 108.325Z" fill="#314756"/>
-                <g id="Skin/&#240;&#159;&#145;&#182;&#240;&#159;&#143;&#189;-03-Brown_2">
-                <g id="Color_2">
-                <path id="Vector_13" d="M279 13H15V293H279V13Z" fill="#2C1B18"/>
-                </g>
-                </g>
-                </g>
-                </g>
-                <g id="Shadow">
-                <mask id="mask7_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="13" width="234" height="267">
-                <g id="react-mask-41">
-                <path id="Vector_14" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM108 199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V153H108V199Z" fill="white"/>
-                </g>
-                </mask>
-                <g mask="url(#mask7_0_1)">
-                <path id="Shadow-Mask" fill-rule="evenodd" clip-rule="evenodd" d="M45.0989 128.057C42.7251 131.083 39.5296 135.528 39.3618 135.194C41.2345 132.811 42.3748 130.012 42.3409 126.436C42.5176 108.335 30.4366 100.867 42.3409 66.4186C43.0096 64.509 44.107 62.7045 45.5859 61.0049C35.2433 95.4587 46.3685 103.356 46.2027 122C46.2225 124.295 45.8223 126.285 45.0989 128.057ZM217.419 61.0049C218.898 62.7045 219.996 64.509 220.664 66.4186C230.822 95.813 223.516 105.563 221.264 119.036C220.964 119.841 221.195 120.79 220.88 121.603C190.207 111.145 162.59 91.5596 146.495 68.6119C123.711 98.0358 73.3544 98.3732 48.6737 123.936C49.0607 123.392 49.4281 122.885 49.7585 122.446C72.294 92.5274 123.247 93.3241 145.846 61.3024C161.244 85.3904 187.664 105.95 217.009 116.927C217.31 116.073 217.09 115.077 217.376 114.233C219.484 100.4 226.215 90.3069 217.419 61.0049Z" fill="black" fill-opacity="0.16"/>
-                </g>
-                </g>
-                <path id="Light" fill-rule="evenodd" clip-rule="evenodd" d="M49.7585 122.446C72.294 92.5274 123.247 93.3241 145.846 61.3024C161.244 85.3904 187.664 105.95 217.009 116.927C217.31 116.073 217.09 115.077 217.376 114.233C219.531 100.089 226.52 89.8552 216.803 59C205.166 22.5393 175.089 13.7682 132.003 13.016C131.336 13.005 131.17 13.0024 131.003 13C87.9166 13.7682 57.8396 22.5393 46.2027 59C34.8139 95.1608 46.3717 102.999 46.2027 122C46.235 125.753 45.1441 128.691 43.3526 131.193C43.5361 131.595 47.5062 125.437 49.7585 122.446Z" fill="white" fill-opacity="0.1"/>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </g>
-                </svg>
+        <h3>Animating the SVG with CSS</h3>
+        <p>You’re going to want to go into your style.css file. Remember when you named your shape layers? It’s time to use that. In this example, I animated my avatar.</p>
+        <img src="/img/avatar-edit.png" alt="An avatar image of me">
+        <p>I want to animate the eyebrows, so in the CSS, I select both of the eyebrows and write the following code</p>
+        <img src="/img/eyebrow-demo01.png" alt="An image of CSS code">
+        <p>Here we’re telling CSS that we want to animate something. I select the shapes I want to animate. In the animation property, I name my animation “eyebrow”, set a duration (1 second), and set how I want it to be played (ease-out infinite), in that order. The order matters.</p>
+        <p>The transform-origin property tells CSS to establish the axis on which something will be moved. The percentages represent the x and y axis respectively, so 50% means it’s placed on the halfway point on the Y axis.</p>
+        <p>Next, we establish the keyframes! After that line of code, I put this in:</p>
+        <img src="/img/eyebrow-demo-02.png" alt="An image of CSS code">
+        <p>With the keyframes, I establish where I want my eyebrows to be for the duration of the animation. 0% is where they are at the start, 50% is the halfway point, and 100% is the end. I want this to loop seamlessly, so 0% and 100% have the same properties—it ends up where it started.</p>
+        <p>And here is the result!</p>
 
-
-
-    </div>
-
-
-    <div id="inari">
-
-        <svg viewBox="0 0 360 432" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="360" height="432" fill="white"/>
-            <g id="inari-original 1">
+        <svg width="264" height="280" viewBox="0 0 264 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="264" height="280" fill="#E5E5E5"/>
+            <g id="avataaars(1) 1">
+            <g id="Avataaar">
+            <g id="Avataaar/Circle">
             <g id="Group">
-            <path id="Vector" d="M164.4 166.5C164.4 195.9 164.4 314 164.4 353.7C164.4 393.5 53.9 424.3 42.9 374.4C32 374.4 26 374.4 26 374.4V414.6H336.5V374.4C336.5 374.4 330.5 374.4 319.6 374.4C308.6 424.2 198.1 393.4 198.1 353.7C198.1 313.9 198.1 195.9 198.1 166.5C198.1 137.1 317.9 104.2 336.8 142.8C336 81.1 284.9 85.4 242.3 85.1C210 84.9 188.3 85.1 181.2 85.2C174.1 85.1 152.4 84.9 120.1 85.1C77.5 85.4 26.5 81 25.6 142.8C44.5 104.3 164.4 137.1 164.4 166.5Z" fill="#FF4713"/>
-            <path id="Vector_2" d="M58.6 340.7C61.6 345.3 66.9 364.7 73 369.9C80 375.8 89.6 377.7 100 377.4C109.9 377.1 118.9 369.9 125.1 363C132.5 354.7 136.2 337.4 135.7 331.2C135 323.7 120.7 319 110.1 317.4C101.6 316.1 93.3 316.7 85.4 317.6C77.8 318.5 75.4 321.9 73.4 326C86.7 323.9 117.4 323.2 122.2 331C127.9 340.2 72.2 341 57.6 330.1C51.1 325.3 39 326.5 35.7 336.1C31.3 349.3 55.2 361.1 67.2 365.8C67.2 365.8 62.7 356.9 59.2 353.7C54.3 349.3 42.6 347.1 42.2 340.9C41.7 333.8 52.8 331.8 58.6 340.7Z" fill="#993921"/>
-            <path id="Vector_3" d="M25.6 159.1C25.6 196.6 37.8 218.5 70.2 234.4C95.8 247 126.5 254.6 159.9 283.4C159.9 280.3 159.9 273.2 159.9 270.4C159.9 245.6 118.9 238.4 96.7 230.8C83.1 226.1 57.6 212.9 45.9 201C38.5 193.4 25.6 175.7 25.6 159.1Z" fill="#FF4713"/>
-            <path id="Vector_4" d="M142.1 74.8C129.5 37.7 109.6 25.4 87.4 24.2C53.5 22.5 41.7 65 40.1 86.9C57.6 74 105.1 70.7 142.1 74.8Z" fill="#993921"/>
-            <path id="Vector_5" d="M141.7 199.6C131.8 188.6 123.6 187.2 110 185.1C99.5 183.4 80.3 177 74.6 156.1C70.5 185.5 84.6 197.1 98.7 199.7C110.4 201.9 121 191.3 141.7 199.6Z" fill="#993921"/>
-            <path id="left-steam" d="M109.9 224C101.5 238.2 102.5 248 104.2 264.2C105.5 276.7 104.4 300.5 85 312.3C115.9 309.7 123.6 290.5 122.3 273.6C121.2 259.6 107.4 250 109.9 224Z" fill="#EFD9A0"/>
-            <path id="Vector_6" d="M302.5 340.7C299.5 345.3 294.2 364.7 288.1 369.9C281.1 375.8 271.5 377.7 261.1 377.4C251.2 377.1 242.2 369.9 236 363C228.6 354.7 224.9 337.4 225.4 331.2C226.1 323.7 240.4 319 251 317.4C259.5 316.1 267.8 316.7 275.7 317.6C283.3 318.5 285.7 321.9 287.7 326C274.4 323.9 243.7 323.2 238.9 331C233.2 340.2 288.9 341 303.5 330.1C310 325.3 322.1 326.5 325.4 336.1C329.8 349.3 305.9 361.1 293.9 365.8C293.9 365.8 298.4 356.9 301.9 353.7C306.8 349.3 318.5 347.1 318.9 340.9C319.4 333.8 308.4 331.8 302.5 340.7Z" fill="#993921"/>
-            <path id="Vector_7" d="M316.5 200.9C304.8 212.8 279.3 226 265.7 230.7C243.6 238.3 202.5 245.4 202.5 270.3C202.5 273.1 202.5 280.2 202.5 283.3C235.8 254.5 266.5 246.9 292.2 234.3C324.6 218.3 336.8 196.5 336.8 159C336.8 175.7 324 193.4 316.5 200.9Z" fill="#FF4713"/>
-            <path id="Vector_8" d="M322.3 86.9C320.8 65 308.9 22.5 275 24.3C252.8 25.5 232.9 37.8 220.3 74.9C257.3 70.7 304.8 74 322.3 86.9Z" fill="#993921"/>
-            <path id="Vector_9" d="M263.8 199.7C277.8 197.1 292 185.5 287.9 156.1C282.2 176.9 263 183.4 252.5 185.1C238.9 187.3 230.7 188.6 220.8 199.6C241.5 191.3 252 201.9 263.8 199.7Z" fill="#993921"/>
-            <path id="right-steam" d="M251.536 224C259.936 238.2 258.936 248 257.236 264.2C255.936 276.7 257.036 300.5 276.436 312.3C245.536 309.7 237.836 290.5 239.136 273.6C240.336 259.6 254.036 250 251.536 224Z" fill="#EFD9A0"/>
+            <g id="Circle">
+            <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="40" width="240" height="240">
+            <g id="react-mask-4">
+            <path id="Vector" d="M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask0_0_1)">
+            <path id="Circle-Background" d="M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z" fill="#E6E6E6"/>
+            <g id="Color/Palette/Blue-01">
+            <path id="&#240;&#159;&#150;&#141;Color" d="M252 40H12V280H252V40Z" fill="#65C9FF"/>
+            </g>
+            </g>
+            </g>
+            <mask id="mask1_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
+            <g id="react-mask-5">
+            <path id="Vector_2" d="M12 160C12 226.274 65.7258 280 132 280C198.274 280 252 226.274 252 160H264V0H0V160H12Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask1_0_1)">
+            <g id="Avataaar_2">
+            <g id="Body">
+            <mask id="mask2_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="36" width="200" height="244">
+            <g id="react-mask-6">
+            <path id="Vector_3" d="M156 180.611V199H160C199.764 199 232 231.236 232 271V280H32V271C32 231.236 64.2355 199 104 199H108V180.611C90.7626 172.422 78.3722 155.687 76.3051 135.881C70.4803 135.058 66 130.052 66 124V110C66 104.054 70.3246 99.1181 76 98.1659V92C76 61.0721 101.072 36 132 36C162.928 36 188 61.0721 188 92V98.1659C193.675 99.1181 198 104.054 198 110V124C198 130.052 193.52 135.058 187.695 135.881C185.628 155.687 173.237 172.422 156 180.611Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask2_0_1)">
+            <path id="Vector_4" d="M156 180.611V199H160C199.764 199 232 231.236 232 271V280H32V271C32 231.236 64.2355 199 104 199H108V180.611C90.7626 172.422 78.3722 155.687 76.3051 135.881C70.4803 135.058 66 130.052 66 124V110C66 104.054 70.3246 99.1181 76 98.1659V92C76 61.0721 101.072 36 132 36C162.928 36 188 61.0721 188 92V98.1659C193.675 99.1181 198 104.054 198 110V124C198 130.052 193.52 135.058 187.695 135.881C185.628 155.687 173.237 172.422 156 180.611Z" fill="#D0C6AC"/>
+            <g id="Skin/&#240;&#159;&#145;&#182;&#240;&#159;&#143;&#189;-03-Brown">
+            <g id="Color">
+            <path id="Vector_5" d="M296 36H32V316H296V36Z" fill="#EDB98A"/>
+            </g>
+            </g>
+            <path id="Neck-Shadow" fill-rule="evenodd" clip-rule="evenodd" d="M188 115V138C188 168.928 162.928 194 132 194C101.072 194 76 168.928 76 138V115V130C76 160.928 101.072 186 132 186C162.928 186 188 160.928 188 130V115Z" fill="black" fill-opacity="0.1"/>
+            </g>
+            </g>
+            <g id="Clothing/Shirt-V-Neck">
+            <mask id="mask3_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="199" width="200" height="81">
+            <g id="react-mask-56">
+            <path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M171.32 199.936C205.706 205.367 232 235.139 232 271.052V280H32V271.052C32 235.138 58.2944 205.366 92.6818 199.936C93.5836 205.005 96.1164 209.824 100.236 213.539L129.321 239.768C130.843 241.14 133.157 241.14 134.679 239.768L163.764 213.539C164.189 213.155 164.601 212.756 164.998 212.343C168.414 208.787 170.517 204.452 171.32 199.936Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask3_0_1)">
+            <path id="Clothes" fill-rule="evenodd" clip-rule="evenodd" d="M171.32 199.936C205.706 205.367 232 235.139 232 271.052V280H32V271.052C32 235.138 58.2944 205.366 92.6818 199.936C93.5836 205.005 96.1164 209.824 100.236 213.539L129.321 239.768C130.843 241.14 133.157 241.14 134.679 239.768L163.764 213.539C164.189 213.155 164.601 212.756 164.998 212.343C168.414 208.787 170.517 204.452 171.32 199.936Z" fill="#E6E6E6"/>
+            <g id="Color/Palette/Gray-01">
+            <path id="&#240;&#159;&#150;&#141;Color_2" d="M264 170H0V280H264V170Z" fill="#25557C"/>
+            </g>
+            </g>
+            </g>
+            <g id="Face">
+            <g id="Mouth/Smile">
+            <mask id="mask4_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="113" y="147" width="38" height="19">
+            <g id="react-mask-68">
+            <path id="Vector_7" fill-rule="evenodd" clip-rule="evenodd" d="M113.118 149.128C114.176 158.62 122.226 166 132 166C141.804 166 149.874 158.574 150.892 149.04C150.974 148.273 150.117 147 149.043 147C134.149 147 122.738 147 115.087 147C114.007 147 113.012 148.178 113.118 149.128Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask4_0_1)">
+            <path id="Mouth" fill-rule="evenodd" clip-rule="evenodd" d="M113.118 149.128C114.176 158.62 122.226 166 132 166C141.804 166 149.874 158.574 150.892 149.04C150.974 148.273 150.117 147 149.043 147C134.149 147 122.738 147 115.087 147C114.007 147 113.012 148.178 113.118 149.128Z" fill="black" fill-opacity="0.7"/>
+            <path id="Teeth" d="M143 136H122C119.239 136 117 138.239 117 141V147C117 149.761 119.239 152 122 152H143C145.761 152 148 149.761 148 147V141C148 138.239 145.761 136 143 136Z" fill="white"/>
+            <g id="Tongue">
+            <g id="Group_2">
+            <path id="Vector_8" d="M127 180C133.075 180 138 175.075 138 169C138 162.925 133.075 158 127 158C120.925 158 116 162.925 116 169C116 175.075 120.925 180 127 180Z" fill="#FF4F6D"/>
+            <path id="Vector_9" d="M137 180C143.075 180 148 175.075 148 169C148 162.925 143.075 158 137 158C130.925 158 126 162.925 126 169C126 175.075 130.925 180 137 180Z" fill="#FF4F6D"/>
+            </g>
+            </g>
+            </g>
+            </g>
+            <g id="Nose/Default">
+            <path id="Nose" fill-rule="evenodd" clip-rule="evenodd" d="M120 130C120 134.418 125.373 138 132 138C138.627 138 144 134.418 144 130" fill="black" fill-opacity="0.16"/>
+            </g>
+            <g id="Eyes/Side-&#240;&#159;&#152;&#146;">
+            <path id="Eye" fill-rule="evenodd" clip-rule="evenodd" d="M103.241 110.346C102.463 111.357 102 112.625 102 114C102 117.314 104.686 120 108 120C111.314 120 114 117.314 114 114C114 113.71 113.979 113.424 113.94 113.145C113.947 112.923 113.91 112.671 113.815 112.407C113.77 112.281 113.722 112.157 113.671 112.035C113.337 111.072 112.765 110.22 112.025 109.551C109.899 107.317 106.506 106 102.998 106C98.1644 106 94.0067 108.649 92.1602 112.447C91.6201 113.558 92.5468 114.3 93.4375 113.572C95.8738 111.579 99.2572 110.344 102.998 110.344C103.079 110.344 103.16 110.344 103.241 110.346Z" fill="black" fill-opacity="0.6"/>
+            <path id="Eye_2" fill-rule="evenodd" clip-rule="evenodd" d="M161.241 110.346C160.463 111.357 160 112.625 160 114C160 117.314 162.686 120 166 120C169.314 120 172 117.314 172 114C172 113.71 171.979 113.424 171.94 113.145C171.947 112.923 171.91 112.671 171.815 112.407C171.77 112.281 171.722 112.157 171.671 112.035C171.337 111.072 170.765 110.22 170.025 109.551C167.899 107.317 164.506 106 160.998 106C156.164 106 152.007 108.649 150.16 112.447C149.62 113.558 150.547 114.3 151.438 113.572C153.874 111.579 157.257 110.344 160.998 110.344C161.079 110.344 161.16 110.344 161.241 110.346Z" fill="black" fill-opacity="0.6"/>
+            </g>
+            <g id="Eyebrow/Outline/Default">
+            <g id="I-Browse">
+            <path id="left-eyebrow" d="M91.6302 99.1586C95.5452 93.6499 106.278 90.5608 115.523 92.8312C116.596 93.0946 117.679 92.4386 117.942 91.3659C118.206 90.2932 117.55 89.21 116.477 88.9466C105.74 86.31 93.3121 89.887 88.3698 96.8414C87.7299 97.7418 87.9411 98.9904 88.8414 99.6302C89.7418 100.27 90.9904 100.059 91.6302 99.1586Z" fill="black" fill-opacity="0.6"/>
+            <path id="right-eyebrow" d="M172.37 99.1586C168.455 93.6499 157.722 90.5608 148.477 92.8312C147.405 93.0946 146.321 92.4386 146.058 91.3659C145.795 90.2932 146.451 89.21 147.523 88.9466C158.26 86.31 170.688 89.887 175.631 96.8414C176.27 97.7418 176.059 98.9904 175.159 99.6302C174.259 100.27 173.01 100.059 172.37 99.1586Z" fill="black" fill-opacity="0.6"/>
+            </g>
+            </g>
+            </g>
+            <g id="Top">
+            <mask id="mask5_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
+            <g id="react-mask-42">
+            <path id="Vector_10" d="M264 0H0V280H264V0Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask5_0_1)">
+            <g id="Top/Long-Hair/Big-Hair">
+            <g id="Group_3">
+            <g id="Hair">
+            <mask id="mask6_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="13" width="234" height="267">
+            <g id="react-mask-43">
+            <path id="Vector_11" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM197.884 108.325C176.364 96.7374 157.89 80.1443 145.846 61.3024C127.764 86.9237 91.5299 91.5348 66.2241 107.68C66.0771 108.431 66 109.206 66 110V123C66 129.019 70.4309 134.002 76.2086 134.867C77.9518 155.115 90.4692 172.283 108 180.611V199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V180.611C173.531 172.283 186.048 155.115 187.791 134.867C193.569 134.002 198 129.019 198 123V110C198 109.432 197.96 108.872 197.884 108.325Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask6_0_1)">
+            <path id="Vector_12" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM197.884 108.325C176.364 96.7374 157.89 80.1443 145.846 61.3024C127.764 86.9237 91.5299 91.5348 66.2241 107.68C66.0771 108.431 66 109.206 66 110V123C66 129.019 70.4309 134.002 76.2086 134.867C77.9518 155.115 90.4692 172.283 108 180.611V199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V180.611C173.531 172.283 186.048 155.115 187.791 134.867C193.569 134.002 198 129.019 198 123V110C198 109.432 197.96 108.872 197.884 108.325Z" fill="#314756"/>
+            <g id="Skin/&#240;&#159;&#145;&#182;&#240;&#159;&#143;&#189;-03-Brown_2">
+            <g id="Color_2">
+            <path id="Vector_13" d="M279 13H15V293H279V13Z" fill="#2C1B18"/>
+            </g>
+            </g>
+            </g>
+            </g>
+            <g id="Shadow">
+            <mask id="mask7_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="13" width="234" height="267">
+            <g id="react-mask-41">
+            <path id="Vector_14" fill-rule="evenodd" clip-rule="evenodd" d="M237.385 195.806C232.011 201.518 226.648 205.128 226.831 211C227.148 222.889 270.439 258.051 232 280H31.0053C-7.43377 258.051 35.8572 222.889 36.1741 211C36.3569 205.128 30.9941 201.518 25.6205 195.806C20.2469 190.094 14.8626 182.28 15.0027 168C15.9445 138.972 46.3717 141.588 46.2027 122C46.3717 102.999 34.8139 95.1608 46.2027 59C57.8396 22.5393 87.9166 13.7682 131.003 13.016V13C131.17 13.0024 131.336 13.005 131.503 13.0076C131.669 13.005 131.836 13.0024 132.003 13V13.016C175.089 13.7682 205.166 22.5393 216.803 59C228.191 95.1608 216.634 102.999 216.803 122C216.634 141.588 247.061 138.972 248.003 168C248.143 182.28 242.758 190.094 237.385 195.806ZM108 199H104C64.2355 199 32 231.236 32 271V280H232V271C232 231.236 199.764 199 160 199H156V153H108V199Z" fill="white"/>
+            </g>
+            </mask>
+            <g mask="url(#mask7_0_1)">
+            <path id="Shadow-Mask" fill-rule="evenodd" clip-rule="evenodd" d="M45.0989 128.057C42.7251 131.083 39.5296 135.528 39.3618 135.194C41.2345 132.811 42.3748 130.012 42.3409 126.436C42.5176 108.335 30.4366 100.867 42.3409 66.4186C43.0096 64.509 44.107 62.7045 45.5859 61.0049C35.2433 95.4587 46.3685 103.356 46.2027 122C46.2225 124.295 45.8223 126.285 45.0989 128.057ZM217.419 61.0049C218.898 62.7045 219.996 64.509 220.664 66.4186C230.822 95.813 223.516 105.563 221.264 119.036C220.964 119.841 221.195 120.79 220.88 121.603C190.207 111.145 162.59 91.5596 146.495 68.6119C123.711 98.0358 73.3544 98.3732 48.6737 123.936C49.0607 123.392 49.4281 122.885 49.7585 122.446C72.294 92.5274 123.247 93.3241 145.846 61.3024C161.244 85.3904 187.664 105.95 217.009 116.927C217.31 116.073 217.09 115.077 217.376 114.233C219.484 100.4 226.215 90.3069 217.419 61.0049Z" fill="black" fill-opacity="0.16"/>
+            </g>
+            </g>
+            <path id="Light" fill-rule="evenodd" clip-rule="evenodd" d="M49.7585 122.446C72.294 92.5274 123.247 93.3241 145.846 61.3024C161.244 85.3904 187.664 105.95 217.009 116.927C217.31 116.073 217.09 115.077 217.376 114.233C219.531 100.089 226.52 89.8552 216.803 59C205.166 22.5393 175.089 13.7682 132.003 13.016C131.336 13.005 131.17 13.0024 131.003 13C87.9166 13.7682 57.8396 22.5393 46.2027 59C34.8139 95.1608 46.3717 102.999 46.2027 122C46.235 125.753 45.1441 128.691 43.3526 131.193C43.5361 131.595 47.5062 125.437 49.7585 122.446Z" fill="white" fill-opacity="0.1"/>
+            </g>
+            </g>
+            </g>
+            </g>
+            </g>
+            </g>
+            </g>
+            </g>
             </g>
             </g>
             </svg>
-            
-            
 
-    </div>
+
+
+
+
+
+
+        <p> In this next example, I want to animate the steam rising from the cups of tea.</p>
+        <img src="img/inari-edit.png" alt="A vector image of a fox superimposed over the letter I" width="200">
+        <img src="/img/inari-demo00.png" alt="An image of CSS code">
+        <img src="/img/inari-demo01.png" alt="An image of CSS code">
+        <p>I use the opacity property to mimic the transparency of steam. It also comes in handy for looping the animation. I placed the keyframe at 15% too, in order to draw out the evaporation sequence. After you know what properties you want to use, it’s just a matter of tweaking it until everything is just right.</p>
+        <p>Here is the result!</p>
+
+        <div id="inari">
+
+            <svg viewBox="0 0 360 432" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="360" height="432" fill="white"/>
+                <g id="inari-original 1">
+                <g id="Group">
+                <path id="Vector" d="M164.4 166.5C164.4 195.9 164.4 314 164.4 353.7C164.4 393.5 53.9 424.3 42.9 374.4C32 374.4 26 374.4 26 374.4V414.6H336.5V374.4C336.5 374.4 330.5 374.4 319.6 374.4C308.6 424.2 198.1 393.4 198.1 353.7C198.1 313.9 198.1 195.9 198.1 166.5C198.1 137.1 317.9 104.2 336.8 142.8C336 81.1 284.9 85.4 242.3 85.1C210 84.9 188.3 85.1 181.2 85.2C174.1 85.1 152.4 84.9 120.1 85.1C77.5 85.4 26.5 81 25.6 142.8C44.5 104.3 164.4 137.1 164.4 166.5Z" fill="#FF4713"/>
+                <path id="Vector_2" d="M58.6 340.7C61.6 345.3 66.9 364.7 73 369.9C80 375.8 89.6 377.7 100 377.4C109.9 377.1 118.9 369.9 125.1 363C132.5 354.7 136.2 337.4 135.7 331.2C135 323.7 120.7 319 110.1 317.4C101.6 316.1 93.3 316.7 85.4 317.6C77.8 318.5 75.4 321.9 73.4 326C86.7 323.9 117.4 323.2 122.2 331C127.9 340.2 72.2 341 57.6 330.1C51.1 325.3 39 326.5 35.7 336.1C31.3 349.3 55.2 361.1 67.2 365.8C67.2 365.8 62.7 356.9 59.2 353.7C54.3 349.3 42.6 347.1 42.2 340.9C41.7 333.8 52.8 331.8 58.6 340.7Z" fill="#993921"/>
+                <path id="Vector_3" d="M25.6 159.1C25.6 196.6 37.8 218.5 70.2 234.4C95.8 247 126.5 254.6 159.9 283.4C159.9 280.3 159.9 273.2 159.9 270.4C159.9 245.6 118.9 238.4 96.7 230.8C83.1 226.1 57.6 212.9 45.9 201C38.5 193.4 25.6 175.7 25.6 159.1Z" fill="#FF4713"/>
+                <path id="Vector_4" d="M142.1 74.8C129.5 37.7 109.6 25.4 87.4 24.2C53.5 22.5 41.7 65 40.1 86.9C57.6 74 105.1 70.7 142.1 74.8Z" fill="#993921"/>
+                <path id="Vector_5" d="M141.7 199.6C131.8 188.6 123.6 187.2 110 185.1C99.5 183.4 80.3 177 74.6 156.1C70.5 185.5 84.6 197.1 98.7 199.7C110.4 201.9 121 191.3 141.7 199.6Z" fill="#993921"/>
+                <path id="left-steam" d="M109.9 224C101.5 238.2 102.5 248 104.2 264.2C105.5 276.7 104.4 300.5 85 312.3C115.9 309.7 123.6 290.5 122.3 273.6C121.2 259.6 107.4 250 109.9 224Z" fill="#EFD9A0"/>
+                <path id="Vector_6" d="M302.5 340.7C299.5 345.3 294.2 364.7 288.1 369.9C281.1 375.8 271.5 377.7 261.1 377.4C251.2 377.1 242.2 369.9 236 363C228.6 354.7 224.9 337.4 225.4 331.2C226.1 323.7 240.4 319 251 317.4C259.5 316.1 267.8 316.7 275.7 317.6C283.3 318.5 285.7 321.9 287.7 326C274.4 323.9 243.7 323.2 238.9 331C233.2 340.2 288.9 341 303.5 330.1C310 325.3 322.1 326.5 325.4 336.1C329.8 349.3 305.9 361.1 293.9 365.8C293.9 365.8 298.4 356.9 301.9 353.7C306.8 349.3 318.5 347.1 318.9 340.9C319.4 333.8 308.4 331.8 302.5 340.7Z" fill="#993921"/>
+                <path id="Vector_7" d="M316.5 200.9C304.8 212.8 279.3 226 265.7 230.7C243.6 238.3 202.5 245.4 202.5 270.3C202.5 273.1 202.5 280.2 202.5 283.3C235.8 254.5 266.5 246.9 292.2 234.3C324.6 218.3 336.8 196.5 336.8 159C336.8 175.7 324 193.4 316.5 200.9Z" fill="#FF4713"/>
+                <path id="Vector_8" d="M322.3 86.9C320.8 65 308.9 22.5 275 24.3C252.8 25.5 232.9 37.8 220.3 74.9C257.3 70.7 304.8 74 322.3 86.9Z" fill="#993921"/>
+                <path id="Vector_9" d="M263.8 199.7C277.8 197.1 292 185.5 287.9 156.1C282.2 176.9 263 183.4 252.5 185.1C238.9 187.3 230.7 188.6 220.8 199.6C241.5 191.3 252 201.9 263.8 199.7Z" fill="#993921"/>
+                <path id="right-steam" d="M251.536 224C259.936 238.2 258.936 248 257.236 264.2C255.936 276.7 257.036 300.5 276.436 312.3C245.536 309.7 237.836 290.5 239.136 273.6C240.336 259.6 254.036 250 251.536 224Z" fill="#EFD9A0"/>
+                </g>
+                </g>
+                </svg>
+                
+                
+    
+        </div>
+
+
+
+
+
+
+
+        <p>For more information about the CSS transform property, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">here</a>!</p>
+
+        </div>
 
 
 
@@ -508,6 +546,7 @@
 
 </main>
     <footer>
+        <a href="https://github.com/RVCC-IDMX/about-me-craterellus/tree/final-draft">Github | </a>
 
         © 2022 - Sarah Lopez
 
