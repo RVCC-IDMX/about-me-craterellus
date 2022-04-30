@@ -42,21 +42,39 @@
         <!-- the header shows logo and page title-->
         <nav class="navbar">
             <div class="logo">
-                <img src="img/aboutme_logo.svg" alt="Blue origami logo">
-                <h1>About Me</h1>
+                <img src="img/aboutme_logo.svg" alt="Logo of the initials SL made into a face">
+                <h1>about me</h1>
             </div>
+
+
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for ="checkbox" class="toggle">
+
+                <svg class="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
+                    <g id="surface134454379">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(96.078432%,96.078432%,96.078432%);fill-opacity:1;" d="M 5 8 C 4.277344 7.988281 3.609375 8.367188 3.246094 8.992188 C 2.878906 9.613281 2.878906 10.386719 3.246094 11.007812 C 3.609375 11.632812 4.277344 12.011719 5 12 L 45 12 C 45.722656 12.011719 46.390625 11.632812 46.753906 11.007812 C 47.121094 10.386719 47.121094 9.613281 46.753906 8.992188 C 46.390625 8.367188 45.722656 7.988281 45 8 Z M 5 23 C 4.277344 22.988281 3.609375 23.367188 3.246094 23.992188 C 2.878906 24.613281 2.878906 25.386719 3.246094 26.007812 C 3.609375 26.632812 4.277344 27.011719 5 27 L 45 27 C 45.722656 27.011719 46.390625 26.632812 46.753906 26.007812 C 47.121094 25.386719 47.121094 24.613281 46.753906 23.992188 C 46.390625 23.367188 45.722656 22.988281 45 23 Z M 5 38 C 4.277344 37.988281 3.609375 38.367188 3.246094 38.992188 C 2.878906 39.613281 2.878906 40.386719 3.246094 41.007812 C 3.609375 41.632812 4.277344 42.011719 5 42 L 45 42 C 45.722656 42.011719 46.390625 41.632812 46.753906 41.007812 C 47.121094 40.386719 47.121094 39.613281 46.753906 38.992188 C 46.390625 38.367188 45.722656 37.988281 45 38 Z M 5 38 "/>
+                    </g>
+                    </svg>
+
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="50px" height="50px">
+                        <g id="surface102993452">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(96.078432%,96.078432%,96.078432%);fill-opacity:1;" d="M 2.75 2.042969 L 2.042969 2.75 L 2.398438 3.101562 L 7.292969 8 L 2.042969 13.25 L 2.75 13.957031 L 8 8.707031 L 12.894531 13.605469 L 13.25 13.957031 L 13.957031 13.25 L 13.605469 12.894531 L 8.707031 8 L 13.957031 2.75 L 13.25 2.042969 L 8 7.292969 L 3.101562 2.398438 Z M 2.75 2.042969 "/>
+                        </g>
+                        </svg>
+
+
+            </label>
 
             
             
             <div class="navbar-links">
-                <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#lit">Blog</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-
-            </ul>
-        </div>
+                <ul class="navmenu">
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#artwork">Artwork</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -74,7 +92,7 @@
         </section>
 
 
-
+        
         <section id="bio">
 
         <!-- bio section!: personal info -->
@@ -146,6 +164,11 @@
         <img src="img/ghosts.jpg" alt="A pen and ink drawing of ghosts">
     </figure>
 
+    
+    <figure>
+        <img src="img/frogs.jpg" alt="A painting of frogs in various poses.">
+    </figure>
+
     <hr>
 
     <figure>
@@ -162,10 +185,6 @@
     </figure>
 
     <hr>
-
-    <figure>
-        <img src="img/frogs.jpg" alt="A painting of frogs in various poses.">
-    </figure>
 
 </section>
 
@@ -236,27 +255,28 @@
 
     <h2>Animating SVG Images</h2>
 
-    <div>
-        <p>SVG animations are used everywhere in websites these days. It's surprisingly easy to animate an SVG. You don't need to be Walt Disney to make these images come to life.</p>
+    
+        <p class="intro">SVG animations are used everywhere in websites these days. It's surprisingly easy to animate an SVG. You don't need to be Walt Disney to make these images come to life.</p>
 
-        <h3>First off, what is an SVG?</h3>
+        <div><h3>First off, what is an SVG?</h3>
         <p>SVG stands for Scalable Vector Graphic. If you don’t know what a vector is, don’t sweat it. Vector images are made up of mathematical equations. They’re basically a list of directions given to a computer and so they can be reproduced at any size. If that still doesn’t make sense, consider the differences between a vector image and a bitmap image, like for instance, a jpeg. If you zoom into a jpeg past 100%, the image will begin to blur. If you keep zooming, you’ll start to see individual pixels. When you zoom in on an SVG image, it never loses its sharpness because your computer knows how to calculate its appearance at any size.</p>
         <p>Vector graphics are used everywhere these days. You can find them on websites. They’re very often used as buttons and interactive elements, and any logo you see nowadays is made from vector art.</p>
-        <p>The coolest thing about SVG images is that you can plug them into the HTML on your website and animate their individual parts.</p>
+        <p>The coolest thing about SVG images is that you can plug them into the HTML on your website and animate their individual parts.</p></div>
 
-        <h3>Can I make an SVG?</h3>
-        <p>Yes, you can! There are tons of options to explore if you’re the creative type and want to delve into the world of vector art. For a long time, Adobe Illustrator was basically the most available option but today there are tools like Figma, that are easy to learn and best of all, free to use. </p>
+        <div><h3>Can I make an SVG?</h3>
+        <p>Yes, you can! There are tons of options to explore if you’re the creative type and want to delve into the world of vector art. For a long time, Adobe Illustrator was basically the most available option but today there are tools like Figma, that are easy to learn and best of all, free to use. </p></div>
 
-        <h3>Where can I find an SVG?</h3>
-        <p>You can also find SVGs to use for free online. I like to use <a href="https://freesvg.org/">freesvg.org</a>, but there are many others. Don’t forget to give credit, though!</p>
+        <div><h3>Where can I find an SVG?</h3>
+        <p>You can also find SVGs to use for free online. I like to use <a href="https://freesvg.org/">freesvg.org</a>, but there are many others. Don’t forget to give credit, though!</p></div>
 
-        <h3>Okay, but I still don’t know how to animate it.</h3>
+        <div><h3>Okay, but I still don’t know how to animate it.</h3>
         <p>We’re getting to that part, don’t worry. Alright, so you have your SVG. Before you start coding, it’s a good idea to open your SVG in a vector image editing application, like Illustrator* or Figma. Go into the layer section of the image editor and make sure that you’ve given names to the shapes that you want to animate. This will come in handy when you want to select them in CSS.</p>
         <p>Important step! Before you export your image out of Figma, go into the export settings and make sure “Include ID Attribute” is checked—that way, the names you’ve given your vector shapes will be preserved.</p>
-        <p>*While doing the research for this article, I discovered that exporting an SVG in Illustrator makes it more difficult to work with it for coding purposes. Illustrator is a great tool for designing vector images. When you finish designing a vector image in Illustrator (if you choose to do so), I recommend exporting your image from Figma before attempting to animate it.</p>
+        <p>*While doing the research for this article, I discovered that exporting an SVG in Illustrator makes it more difficult to work with it for coding purposes. Illustrator is a great tool for designing vector images. When you finish designing a vector image in Illustrator (if you choose to do so), I recommend exporting your image from Figma before attempting to animate it.</p></div>
 
-        <h3>Placing the SVG into your project</h3>
+        <div><h3>Placing the SVG into your project</h3>
         <p>First, make sure the SVG is in the image folder of your project. Open the SVG in your code editor of choice. You’ll see a big wall of text. Highlight the whole thing, then copy and paste it into the body tag in your index.html file. By this point, if you open your page in live preview, you should see your image.</p>
+        </div>
 
         <h3>Animating the SVG with CSS</h3>
         <p>You’re going to want to go into your style.css file. Remember when you named your shape layers? It’s time to use that. In this example, I animated my avatar.</p>
@@ -270,24 +290,12 @@
         <p>With the keyframes, I establish where I want my eyebrows to be for the duration of the animation. 0% is where they are at the start, 50% is the halfway point, and 100% is the end. I want this to loop seamlessly, so 0% and 100% have the same properties—it ends up where it started.</p>
         <p>And here is the result!</p>
 
-<<<<<<< HEAD
+
         <svg width="264" height="280" viewBox="0 0 264 280" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="264" height="280" fill="#E5E5E5"/>
             <g id="avataaars(1) 1">
             <g id="Avataaar">
             <g id="Avataaar/Circle">
-=======
-
-
-    </div>
-
-
-    <div id="inari">
-
-        <svg viewBox="0 0 360 432" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="360" height="432" fill="white"/>
-            <g id="inari-original 1">
->>>>>>> 5d8b0a3fab76a2f453c3798995d25750f8714605
             <g id="Group">
             <g id="Circle">
             <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="40" width="240" height="240">
@@ -416,6 +424,7 @@
             </g>
             </g>
             </svg>
+            
 
 
 
@@ -463,7 +472,7 @@
 
         <p>For more information about the CSS transform property, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">here</a>!</p>
 
-        </div>
+    
 
 
 

@@ -1,86 +1,122 @@
 /* make scrolling smooth */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* add some padding back to rest of page */
 
 main {
-    padding: 2vw;
+  padding: 2vw;
 }
 
 /* navbar */
 
 .navbar {
-    background-color: rgba(46, 46, 46, 0.9);
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  background-color: rgba(46, 46, 46, 0.9);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.svg {
+  width: 2rem;
+}
+
+.close {
+  display: none;
+}
+
+.menu {
+  margin-top: 0.4rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+/* .menu {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+} */
+
+/* .checkbox {
+  display: none;
+} */
+
+/* .checkbox:checked ~ ul.menu li {
+  display: block;
+} */
 
 /* logo */
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.logo img{
-    height: 20vw;
-    width: 20vw;
-    max-width: 130px;
-    max-height: 130px;
+.logo img {
+  height: 20vw;
+  width: 20vw;
+  max-width: 130px;
+  max-height: 130px;
 }
 
+/******************** navigation list ************************/
 
-/* navigation list */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    }
-
-.navbar-links li {
-    display: block;
-    list-style: none;
-    padding: 0.35em 0;
+.navbar-links .navmenu li {
+  display: none;
 }
 
-
-
-/*  
- style all a tags in header 
- and then on hover
-*/
-
-.navbar-links a{
-    color: #f5f5f5;
-    font-size: 1.3rem;
-    padding: .3rem 1rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    display: inline-block;
+.navbar-links a {
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .navbar-links a:hover,
-.navbar-links a:focus{
-    color: #333;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    outline: none;
+.navbar-links a:focus {
+  color: #333;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  outline: none;
+}
+
+#checkbox:checked ~ .navbar-links ul.navmenu li {
+  display: block;
+  padding: 0.5rem 0px;
+}
+
+#checkbox:checked ~ label.toggle .close {
+  display: block;
+}
+
+#checkbox:checked ~ label.toggle .menu {
+  display: none;
 }
 
 /* 
@@ -89,25 +125,37 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media screen and (min-width: 50em){
-    .navbar-links{
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.5rem;
-    }
+@media screen and (min-width: 50em) {
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+  }
 
-    .logo img{
-        height: 10vw;
-        width: 10vw;
-    }
+  .navbar-links .navmenu li {
+    display: block;
+    padding: 2.5rem 0;
+  }
 
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .logo img {
+    height: 10vw;
+    width: 10vw;
+  }
 
-    .navbar ul{
-        display: flex;
-    }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .navbar ul {
+    display: flex;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
 }
