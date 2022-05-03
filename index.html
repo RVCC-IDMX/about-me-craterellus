@@ -258,39 +258,49 @@
     
         <p class="intro">SVG animations are used everywhere in websites these days. It's surprisingly easy to animate an SVG. You don't need to be Walt Disney to make these images come to life.</p>
 
-        <div><h3>First off, what is an SVG?</h3>
+        <div class="partone"><h3>First off, what is an SVG?</h3>
         <p>SVG stands for Scalable Vector Graphic. If you don’t know what a vector is, don’t sweat it. Vector images are made up of mathematical equations. They’re basically a list of directions given to a computer and so they can be reproduced at any size. If that still doesn’t make sense, consider the differences between a vector image and a bitmap image, like for instance, a jpeg. If you zoom into a jpeg past 100%, the image will begin to blur. If you keep zooming, you’ll start to see individual pixels. When you zoom in on an SVG image, it never loses its sharpness because your computer knows how to calculate its appearance at any size.</p>
         <p>Vector graphics are used everywhere these days. You can find them on websites. They’re very often used as buttons and interactive elements, and any logo you see nowadays is made from vector art.</p>
         <p>The coolest thing about SVG images is that you can plug them into the HTML on your website and animate their individual parts.</p></div>
 
-        <div><h3>Can I make an SVG?</h3>
-        <p>Yes, you can! There are tons of options to explore if you’re the creative type and want to delve into the world of vector art. For a long time, Adobe Illustrator was basically the most available option but today there are tools like Figma, that are easy to learn and best of all, free to use. </p></div>
+        <div class="parttwo"><h3>Can I make an SVG?</h3>
+        <p>Yes, you can! There are tons of options to explore if you’re the creative type and want to delve into the world of vector art. For a long time, Adobe Illustrator was basically the most available option but today there are tools like Figma, that are easy to learn and best of all, free to use. </p>
+        </div>
 
-        <div><h3>Where can I find an SVG?</h3>
-        <p>You can also find SVGs to use for free online. I like to use <a href="https://freesvg.org/">freesvg.org</a>, but there are many others. Don’t forget to give credit, though!</p></div>
+        <div class="partthree"><h3>Where can I find an SVG?</h3>
+        <p>You can also find SVGs to use for free online. I like to use <a href="https://freesvg.org/">freesvg.org</a>, but there are many others. Don’t forget to give credit, though!</p>
+        </div>
 
-        <div><h3>Okay, but I still don’t know how to animate it.</h3>
+        <div class="partfour"><h3>Okay, but I still don’t know how to animate it.</h3>
         <p>We’re getting to that part, don’t worry. Alright, so you have your SVG. Before you start coding, it’s a good idea to open your SVG in a vector image editing application, like Illustrator* or Figma. Go into the layer section of the image editor and make sure that you’ve given names to the shapes that you want to animate. This will come in handy when you want to select them in CSS.</p>
         <p>Important step! Before you export your image out of Figma, go into the export settings and make sure “Include ID Attribute” is checked—that way, the names you’ve given your vector shapes will be preserved.</p>
         <p>*While doing the research for this article, I discovered that exporting an SVG in Illustrator makes it more difficult to work with it for coding purposes. Illustrator is a great tool for designing vector images. When you finish designing a vector image in Illustrator (if you choose to do so), I recommend exporting your image from Figma before attempting to animate it.</p></div>
 
-        <div><h3>Placing the SVG into your project</h3>
+        <div class="partfive"><h3>Placing the SVG into your project</h3>
         <p>First, make sure the SVG is in the image folder of your project. Open the SVG in your code editor of choice. You’ll see a big wall of text. Highlight the whole thing, then copy and paste it into the body tag in your index.html file. By this point, if you open your page in live preview, you should see your image.</p>
         </div>
 
-        <h3>Animating the SVG with CSS</h3>
+        <div class="tut1"><h3>Animating the SVG with CSS</h3>
         <p>You’re going to want to go into your style.css file. Remember when you named your shape layers? It’s time to use that. In this example, I animated my avatar.</p>
-        <img src="/img/avatar-edit.png" alt="An avatar image of me">
-        <p>I want to animate the eyebrows, so in the CSS, I select both of the eyebrows and write the following code</p>
-        <img src="/img/eyebrow-demo01.png" alt="An image of CSS code">
-        <p>Here we’re telling CSS that we want to animate something. I select the shapes I want to animate. In the animation property, I name my animation “eyebrow”, set a duration (1 second), and set how I want it to be played (ease-out infinite), in that order. The order matters.</p>
-        <p>The transform-origin property tells CSS to establish the axis on which something will be moved. The percentages represent the x and y axis respectively, so 50% means it’s placed on the halfway point on the Y axis.</p>
-        <p>Next, we establish the keyframes! After that line of code, I put this in:</p>
-        <img src="/img/eyebrow-demo-02.png" alt="An image of CSS code">
-        <p>With the keyframes, I establish where I want my eyebrows to be for the duration of the animation. 0% is where they are at the start, 50% is the halfway point, and 100% is the end. I want this to loop seamlessly, so 0% and 100% have the same properties—it ends up where it started.</p>
-        <p>And here is the result!</p>
+        </div>
+        <div class="tut2"><img src="/img/avatar-edit.png" alt="An avatar image of me"></div>
+        <div class="tut3"><p>I want to animate the eyebrows, so in the CSS, I select both of the eyebrows and write the following code</p>
+        </div>
+        <div class="tut4"><img src="/img/eyebrow-demo01.png" alt="An image of CSS code"></div>
+        <div class="tut5"><p>Here we’re telling CSS that we want to animate something. I select the shapes I want to animate. In the animation property, I name my animation “eyebrow”, set a duration (1 second), and set how I want it to be played (ease-out infinite), in that order. The order matters.</p>
+        </div>
+        <div class="tut6"><p>The transform-origin property tells CSS to establish the axis on which something will be moved. The percentages represent the x and y axis respectively, so 50% means it’s placed on the halfway point on the Y axis.</p>
+        </div>
+        <div class="tut7"><p>Next, we establish the keyframes! After that line of code, I put this in:</p>
+        </div>
+        <div class="tut8"><img src="/img/eyebrow-demo-02.png" alt="An image of CSS code">
+        </div>
+        <div class="tut9"><p>With the keyframes, I establish where I want my eyebrows to be for the duration of the animation. 0% is where they are at the start, 50% is the halfway point, and 100% is the end. I want this to loop seamlessly, so 0% and 100% have the same properties—it ends up where it started.</p>
+        </div>
+        <div class="tut10"><p>And here is the result!</p>
+        </div>
 
-
+        <div class="tut11">
         <svg width="264" height="280" viewBox="0 0 264 280" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="264" height="280" fill="#E5E5E5"/>
             <g id="avataaars(1) 1">
@@ -424,7 +434,7 @@
             </g>
             </g>
             </svg>
-            
+            </div>
 
 
 
@@ -432,12 +442,15 @@
 
 
 
-        <p> In this next example, I want to animate the steam rising from the cups of tea.</p>
-        <img src="img/inari-edit.png" alt="A vector image of a fox superimposed over the letter I" width="200">
-        <img src="/img/inari-demo00.png" alt="An image of CSS code">
-        <img src="/img/inari-demo01.png" alt="An image of CSS code">
-        <p>I use the opacity property to mimic the transparency of steam. It also comes in handy for looping the animation. I placed the keyframe at 15% too, in order to draw out the evaporation sequence. After you know what properties you want to use, it’s just a matter of tweaking it until everything is just right.</p>
-        <p>Here is the result!</p>
+        
+            <div class="tut12">
+                <p> In this next example, I want to animate the steam rising from the cups of tea.</p>
+                <img src="img/inari-edit.png" alt="A vector image of a fox superimposed over the letter I" width="200">
+                <img src="/img/inari-demo00.png" alt="An image of CSS code">
+                <img src="/img/inari-demo01.png" alt="An image of CSS code">
+                <p>I use the opacity property to mimic the transparency of steam. It also comes in handy for looping the animation. I placed the keyframe at 15% too, in order to draw out the evaporation sequence. After you know what properties you want to use, it’s just a matter of tweaking it until everything is just right.</p>
+                <p>Here is the result!</p>
+                </div>
 
         <div id="inari">
 

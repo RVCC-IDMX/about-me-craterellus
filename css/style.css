@@ -588,33 +588,13 @@ input {
   }
 
   legend {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   textarea {
     max-height: 250px;
     min-height: 250px;
   }
-  /* 
-  #lit {
-    padding: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #lit h2 {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: span 1;
-  }
-
-  #lit p.intro {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 2;
-    grid-row-end: span 1;
-  } */
 
   hr {
     display: none;
