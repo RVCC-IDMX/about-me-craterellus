@@ -42,6 +42,8 @@ h6 {
 h1 {
   color: whitesmoke;
   padding-left: 15px;
+  width: 100px;
+  text-align: left;
 }
 
 h2 {
@@ -510,11 +512,11 @@ input {
     grid-row-start: 3;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   #artwork h2 {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 
   #bio {
@@ -522,9 +524,9 @@ input {
     grid-column-end: span 2;
   }
 
-  #bio p {
+  /* #bio p {
     padding: 15px 30px 15px 30px;
-  }
+  } */
 
   #video,
   #gallery,
